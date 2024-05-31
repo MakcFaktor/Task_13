@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Валідація з RegEx</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>We would like to help you</h2>
+      <form id="contactForm">
+        <label for="name"></label>
+        <input type="text" id="name" placeholder="Name" name="name" required />
+        <div id="nameError" class="error"></div>
+        <br />
+        <label for="message"></label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Message"
+          required
+        ></textarea>
+        <div id="messageError" class="error"></div>
+        <br />
+        <h3>How to answer you?</h3>
+        <label for="phone"></label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Phone number"
+          required
+        />
+        <div id="phoneError" class="error"></div>
+        <br />
+        <label for="email"></label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+        <div id="emailError" class="error"></div>
+        <br />
+        <button type="submit">Send message</button>
+      </form>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
